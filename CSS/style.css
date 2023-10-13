@@ -1,0 +1,323 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+#head-show {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/pexels-medhat-ayad-447592.jpg);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: blue;
+    font-family: Crimson Pro;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    font-size: 12pt;
+    color: blue;
+    text-decoration: none;
+    font-family: Crimson Pro;
+}
+nav ul li a:hover{
+    color: rgb(28, 28, 48);
+}
+.active{
+    color: rgb(28, 28, 48);
+}
+
+.showcase {
+    text-align: center;
+    color: blue;
+    padding: 10% 0%;
+}
+
+.showcase h1 {
+    text-align: center;
+    color: blue;
+}
+.showcase h2{
+    font-size: 2em;
+    font-family: crimson pro;
+    font-weight: 100;
+    overflow: hidden;
+    width: fit-content;
+    border-right: .12em solid blue;
+    letter-spacing: 3px;
+    padding: 10px,0px;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: set 3s steps(28, end),
+     blink-caret .5s step-end infinite;
+}
+/* the typing effect */
+@keyframes set{
+    from { width: 0}
+    to {width: 100%}
+}
+/* the typeweiter cursor effect*/
+@keyframes blink-caret {
+    from, to {border-color: transparent }
+    50% {border-color: blue}
+}
+
+.big{
+    font-weight: 700;
+}
+.icons {
+    padding: 2px;
+    font-size: 20pt;
+    color: blue;
+}
+/* about section */
+
+#about{
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3%;
+    background-color: white;
+}
+
+.img{
+    background: url(../Images/pexel1.jpg);
+    height: 400px;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.about-txt h2{
+    font-family: crimson pro;
+    font-size: 3em;
+    line-height: 1.5;
+}
+
+.about-txt h3{
+    font-family: crimson pro;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgb(33, 33, 226);
+    line-height: 1.5;
+}
+
+.about-txt p{
+    font-family: crimson pro;
+    font-size: 13pt;
+    line-height: 1.5;
+    padding: 20px 0px;
+}
+.progressive{
+    background-color: rgba(53, 53, 142, 0.23);
+    border-radius: 5px;
+    font-family: crimson pro;
+    color: black;
+    font-size: 13pt;
+}
+
+.w{padding: 7px;}
+.barw{
+    background-color: rgb(151, 151, 244);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15px 0px;
+    border-radius: 5px;
+    animation: web 2s linear;
+}
+
+.barb{
+    background-color: rgb(151, 151, 244);
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    margin: 15px 0px;
+    border-radius: 5px;
+    animation: brand 2s linear;
+}
+.bard{
+    background-color: rgb(151, 151, 244);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 15px 0px;
+    border-radius: 5px;
+    animation: dev 2s linear;
+}
+
+@keyframes dev{
+   from{width:0%}
+   to{width: 80%;} 
+}
+@keyframes web{
+   from{width:0%}
+   to{width: 80%;} 
+}
+@keyframes brand{
+   from{width:0%}
+   to{width: 80%;} 
+}
+.btn{
+    margin: 50px 0px;
+}
+.btn1{
+    background-color: rgb(54, 54, 110);
+    padding: 12px 20px;
+    font-family: crimson pro;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.btn1:hover{
+    background-color:rgb(151, 151, 244);
+}
+.btn2{
+    padding: 12px 20px;
+    font-family: crimson pro;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.btn2:hover{
+    background-color: rgb(151, 151, 244);
+    border: none;
+}
+#services{
+    padding: 10%;
+}
+#services h1{
+    font-family: crimson pro;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.services-box{
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+}
+.box{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: 1s ease-in;
+}
+.box:hover{
+    transform: scale(1.2);
+}
+.box h3{
+    font-size: 1.5em;
+    font-family: crimson pro;
+    padding-top: 5px;
+}
+
+.box p{
+    font-family: crimson pro;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+.box span{
+    width: fit-content;
+    border-color: rgb(244, 244, 244);
+    font-size: 4em;
+    padding: 20px;
+    border-radius: 50%;
+}
+footer{
+    padding: 3%;
+    background-color: rgb(12, 12, 30);
+    color: white;
+    font-family: crimson pro;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: block;
+        justify-content: none;
+        padding: 2%;
+        text-align: center;
+    }
+    nav ul{
+        gap: 3%;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    nav ul li a{
+      text-transform:capitalize;
+    }
+
+    #head-show{
+        min-height: 400px;
+        block-size: cover;
+    }
+    .showcase{
+        padding-top: 150px;
+        text-align: center;
+    }
+    .showcase.h2{
+        margin: none;
+        font-style: 2em;
+    }
+    .showcase.h1{
+        margin: none;
+        font-style: 1.3em;
+    }
+    #about{
+        display: block;
+    }
+    .img{
+        min-height: 400px;
+    }
+    .services-box{
+        display: block;
+    }
+    .box{
+        margin: 7%;
+    }
+}
